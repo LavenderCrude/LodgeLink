@@ -1,0 +1,210 @@
+<% layout('/layouts/boilerplate.ejs') %>
+<style>
+  .card-img-top {
+    border-radius: 20px;
+    object-fit: cover;
+    height: 300px;
+  }
+
+  .card {
+    border: none;
+    padding: 0;
+  }
+
+  .btn-red {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+  }
+
+  .btn-red:hover {
+    background-color: #dc2626;
+    color: white !important;
+  }
+
+  .btn-black {
+    background-color: #000;
+    color: white;
+    border: none;
+  }
+
+  .btn-black:hover {
+    background-color: #333;
+    color: white !important;
+  }
+</style>
+
+<div class="container" style="max-width: 700px">
+  <h3 class="mb-4 mt-3 fw-semibold"><%= listing.title %></h3>
+
+  <div class="card">
+    <img
+      src="<%= listing.image.url %>"
+      class="card-img-top"
+      alt="Lodge Image"
+      onerror="this.src='https://via.placeholder.com/700x300?text=No+Image'"
+    />
+    <div class="card-body px-0">
+      <p class="mb-3 text-muted">Owned by: <%= listing.owner.username %></p>
+      <p class="mb-3 text-muted"><%= listing.description %></p>
+
+      <div class="mb-2">₹<%= listing.price.toLocaleString('en-IN') %></div>
+      <div><%= listing.location %></div>
+      <div class="mb-4"><%= listing.country %></div>
+
+      <% if(currUser && currUser._id.equals(listing.owner._id)){ %>
+      <div class="d-flex gap-2">
+        <a href="/listing/<%= listing._id %>/edit" class="btn btn-red px-4"
+          >Edit</a
+        >
+        <form
+          action="/listing/<%= listing._id %>/delete?_method=DELETE"
+          method="POST"
+        >
+          <button type="submit" class="btn btn-black px-4">Delete</button>
+        </form>
+      </div>
+      <% }%>
+    </div>
+
+    <hr />
+
+    <% if (currUser) { %>
+    <div>
+      <h4>Leave a Review</h4>
+      <form
+        action="/listing/<%= listing._id %>/reviews"
+        method="post"
+        novalidate
+        class="needs-validation"
+      >
+        <!-- Star Rating -->
+        <fieldset class="starability-slot">
+          <input
+            type="radio"
+            id="second-rate1"
+            name="review[rating]"
+            value="1"
+          />
+          <label for="second-rate1" title="Terrible">1 star</label>
+
+          <input
+            type="radio"
+            id="second-rate2"
+            name="review[rating]"
+            value="2"
+          />
+          <label for="second-rate2" title="Not good">2 stars</label>
+
+          <input
+            type="radio"
+            id="second-rate3"
+            name="review[rating]"
+            value="3"
+            checked
+          />
+          <label for="second-rate3" title="Average">3 stars</label>
+
+          <input
+            type="radio"
+            id="second-rate4"
+            name="review[rating]"
+            value="4"
+          />
+          <label for="second-rate4" title="Very good">4 stars</label>
+
+          <input
+            type="radio"
+            id="second-rate5"
+            name="review[rating]"
+            value="5"
+          />
+          <label for="second-rate5" title="Amazing">5 stars</label>
+        </fieldset>
+
+        <div class="mb-3 mt-3">
+          <label for="comment" class="form-label">Comments</label>
+          <textarea
+            name="review[comment]"
+            id="comment"
+            cols="30"
+            rows="5"
+            class="form-control"
+            required
+          ></textarea>
+          <div class="invalid-feedback">Please Fill Comment.</div>
+        </div>
+
+        <button type="submit" class="btn btn-red px-4">Submit</button>
+      </form>
+    </div>
+    <hr />
+    <% } %>
+
+    <div class="mt-5">
+      <h3 class="mb-4">All Reviews</h3>
+
+      <% if (listing.reviews.length === 0) { %>
+      <p class="text-muted">No reviews yet.</p>
+      <% } else { %>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <% for (let review of listing.reviews) { %>
+        <div class="col">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <h5>@<%= review.author.username %></h5>
+              <h5
+                class="card-title d-flex justify-content-between align-items-center"
+              >
+                <span>
+                  <% for (let i = 1; i <= 5; i++) { %> <% if (i <=
+                  review.rating) { %>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#ffc107"
+                    class="bi bi-star-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.329-.314-.158-.888.283-.95l4.898-.696 2.175-4.327c.197-.39.73-.39.927 0l2.175 4.327 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                    />
+                  </svg>
+                  <% } else { %>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="#e4e5e9"
+                    class="bi bi-star"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.866 14.85c-.078.444.36.79.746.592l4.39-2.256 4.389 2.256c.386.198.824-.148.746-.592l-.83-4.73 3.522-3.356c.33-.314.158-.888-.283-.95l-4.898-.696-2.175-4.327a.513.513 0 0 0-.927 0L6.354 5.118l-4.898.696c-.441.062-.612.636-.282.95l3.523 3.356-.83 4.73z"
+                    />
+                  </svg>
+                  <% } %> <% } %>
+                </span>
+                <span class="d-flex gap-1">
+                  <form
+                    action="/listing/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE"
+                    method="POST"
+                    onsubmit="return confirm('Are you sure you want to delete this review?');"
+                  >
+                    <button type="submit" class="btn btn-sm btn-outline-dark">
+                      Delete
+                    </button>
+                  </form>
+                </span>
+              </h5>
+              <p class="card-text mt-2"><%= review.comment %></p>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>

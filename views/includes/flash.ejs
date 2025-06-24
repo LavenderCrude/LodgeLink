@@ -1,0 +1,42 @@
+<% if (success && success.length) { %>
+<div
+  class="alert alert-success alert-dismissible fade show col-6 offset-3"
+  role="alert"
+>
+  <%= success %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %> <% if (error && error.length) { %>
+<div
+  class="alert alert-danger alert-dismissible fade show col-6 offset-3"
+  role="alert"
+>
+  <%= error %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %>
+
+<script>
+  // Wait 3 seconds, then fade out the alerts
+  setTimeout(() => {
+    const alerts = document.querySelectorAll('.alert');
+    alerts.forEach((alert) => {
+      // Bootstrap's fade out (requires .fade + .show classes)
+      alert.classList.remove('show');
+      // Optional: completely remove from DOM after animation ends
+      setTimeout(() => {
+        alert.remove();
+      }, 500); // Wait for Bootstrap's fade out (0.5s)
+    });
+  }, 2000); // 2-second delay before fading out
+</script>
