@@ -26,10 +26,6 @@ router.post(
   wrapAsync(listingController.createListing)
 );
 
-// router.post('/newLodge/upload', upload.single('image'), (req, res) => {
-//   res.send(req.file);
-// });
-
 // Edit + Update
 router
   .route('/:id/edit')
@@ -37,6 +33,7 @@ router
   .put(
     isLoggedIn,
     isListingOwner,
+    upload.single('image'),
     validateListing,
     wrapAsync(listingController.updateListing)
   );

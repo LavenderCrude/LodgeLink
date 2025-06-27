@@ -1,4 +1,3 @@
-// Data conforming to the schema
 const Data = [
   {
     title: 'Four Seasons Resort Bora Bora',
@@ -17,10 +16,14 @@ const Data = [
       '6858171a30d6206d5a3f390b',
     ],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-151.7395, -16.5004], // Approx. for Bora Bora
+    },
   },
   {
     title: 'Burj Al Arab Jumeirah',
-    description: 'Ultra-luxurious hotel located in Bruj Al Arab',
+    description: 'Ultra-luxurious hotel located in Burj Al Arab',
     image: {
       url: 'https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg',
       filename: 'burjalarab_jumeirah.jpg',
@@ -30,6 +33,10 @@ const Data = [
     country: 'United Arab Emirates',
     reviews: ['6853a32bc58de347998dba07'],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [55.1853, 25.1412], // Approx. for Burj Al Arab, Dubai
+    },
   },
   {
     title: 'Taj Sea Palace',
@@ -43,6 +50,10 @@ const Data = [
     country: 'India',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [73.6808, 24.5754], // Approx. for Udaipur
+    },
   },
   {
     title: 'The Leela Palace',
@@ -56,6 +67,10 @@ const Data = [
     country: 'India',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [77.2167, 28.6139], // Approx. for New Delhi
+    },
   },
   {
     title: 'Burj Al Arab',
@@ -69,6 +84,10 @@ const Data = [
     country: 'UAE',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [55.1853, 25.1412], // Approx. for Burj Al Arab, Dubai
+    },
   },
   {
     title: 'Marina Bay Sands',
@@ -82,6 +101,10 @@ const Data = [
     country: 'Singapore',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [103.8607, 1.2834], // Approx. for Marina Bay Sands, Singapore
+    },
   },
   {
     title: 'The Plaza',
@@ -95,6 +118,10 @@ const Data = [
     country: 'USA',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-73.9747, 40.7648], // Approx. for The Plaza, New York
+    },
   },
   {
     title: 'Hotel de Paris',
@@ -108,6 +135,10 @@ const Data = [
     country: 'Monaco',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [7.4275, 43.7384], // Approx. for Monte Carlo
+    },
   },
   {
     title: 'The Ritz London',
@@ -121,6 +152,10 @@ const Data = [
     country: 'UK',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-0.1416, 51.5074], // Approx. for The Ritz, London
+    },
   },
   {
     title: 'Mandarin Oriental',
@@ -130,10 +165,14 @@ const Data = [
       filename: 'mandarinoriental.jpg',
     },
     price: 28000,
-    location: 'Bangkok',
-    country: 'Thailand',
+    location: 'Chengdu',
+    country: 'China',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [104.0668, 30.6586], // Approx. for Mandarin Oriental, Chengdu
+    },
   },
   {
     title: 'Four Seasons Bora Bora',
@@ -147,6 +186,10 @@ const Data = [
     country: 'French Polynesia',
     reviews: ['68559451c0854c05cd3b0808'],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-151.7395, -16.5004], // Approx. for Bora Bora
+    },
   },
   {
     title: 'Amangiri',
@@ -160,6 +203,10 @@ const Data = [
     country: 'USA',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-111.6004, 37.0232], // Approx. for Amangiri, Utah
+    },
   },
   {
     title: 'Belmond Hotel Caruso',
@@ -174,6 +221,10 @@ const Data = [
     country: 'Italy',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [14.6128, 40.6503], // Approx. for Ravello
+    },
   },
   {
     title: 'The Peninsula',
@@ -188,6 +239,10 @@ const Data = [
     country: 'China',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [114.1717, 22.295], // Approx. for The Peninsula, Hong Kong
+    },
   },
   {
     title: 'Emirates Palace',
@@ -201,6 +256,10 @@ const Data = [
     country: 'UAE',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [54.3179, 24.4618], // Approx. for Emirates Palace, Abu Dhabi
+    },
   },
   {
     title: 'Hotel President Wilson',
@@ -214,6 +273,10 @@ const Data = [
     country: 'Switzerland',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [6.1507, 46.2135], // Approx. for Hotel President Wilson, Geneva
+    },
   },
   {
     title: 'The Savoy',
@@ -227,6 +290,10 @@ const Data = [
     country: 'UK',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-0.1201, 51.5104], // Approx. for The Savoy, London
+    },
   },
   {
     title: 'Rosewood Mayakoba',
@@ -240,6 +307,10 @@ const Data = [
     country: 'Mexico',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-87.0285, 20.6767], // Approx. for Rosewood Mayakoba
+    },
   },
   {
     title: 'Aman Tokyo',
@@ -253,6 +324,10 @@ const Data = [
     country: 'Japan',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [139.7635, 35.6828], // Approx. for Aman Tokyo
+    },
   },
   {
     title: 'Hotel du Cap-Eden-Roc',
@@ -266,6 +341,10 @@ const Data = [
     country: 'France',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [7.1204, 43.5506], // Approx. for Hotel du Cap-Eden-Roc
+    },
   },
   {
     title: 'Ashford Castle',
@@ -279,6 +358,10 @@ const Data = [
     country: 'Ireland',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-9.2846, 53.5344], // Approx. for Ashford Castle
+    },
   },
   {
     title: 'The Connaught',
@@ -292,6 +375,10 @@ const Data = [
     country: 'UK',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-0.1497, 51.5101], // Approx. for The Connaught, London
+    },
   },
   {
     title: 'The Brando',
@@ -305,6 +392,10 @@ const Data = [
     country: 'French Polynesia',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-149.5583, -17.0083], // Approx. for Tetiaroa
+    },
   },
   {
     title: 'Amankora',
@@ -318,6 +409,10 @@ const Data = [
     country: 'Bhutan',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [89.4133, 27.4307], // Approx. for Paro, Bhutan
+    },
   },
   {
     title: 'Singita Boulders Lodge',
@@ -331,6 +426,10 @@ const Data = [
     country: 'South Africa',
     reviews: ['683344c8cf9c3865441ff6dc', '68334515cf9c3865441ff6e3'],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [31.414, -24.7697], // Approx. for Sabi Sand
+    },
   },
   {
     title: 'New PantHouse',
@@ -345,6 +444,10 @@ const Data = [
     country: 'USA',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-73.9797, 40.7678], // Approx. for Central Park, New York
+    },
   },
   {
     title: 'Manhattan CityBride',
@@ -363,6 +466,10 @@ const Data = [
       '68332321373997f96c19f024',
     ],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-73.9903, 40.7041], // Approx. for Manhattan Bridge area
+    },
   },
   {
     title: 'Peace Cabin',
@@ -381,6 +488,10 @@ const Data = [
       '68336c903ae32b7b824f9fb5',
     ],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-116.5, 51.45], // Approx. for Yoho National Park
+    },
   },
   {
     title: 'New Joshimat Lodge',
@@ -399,6 +510,10 @@ const Data = [
       '6833f7572ebbe6646d64c2bf',
     ],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [79.5593, 30.5549], // Approx. for Joshimat
+    },
   },
   {
     title: 'Fairmont Luxuryia',
@@ -412,6 +527,10 @@ const Data = [
     country: 'Indonesia',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [115.1889, -8.6705], // Approx. for Bali
+    },
   },
   {
     title: 'Al Nassir Hotel',
@@ -425,6 +544,10 @@ const Data = [
     country: 'Saudi Arabia',
     reviews: ['6836ba7d3fffb26dd73ef336'],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [46.7132, 24.6572], // Approx. for Al Nassir, Riyadh
+    },
   },
   {
     title: "L'Mario Mysore",
@@ -438,6 +561,10 @@ const Data = [
     country: 'India',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [76.6394, 12.2958], // Approx. for Mysore
+    },
   },
   {
     title: 'Sikkim Junction',
@@ -451,6 +578,10 @@ const Data = [
     country: 'India',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [88.6065, 27.3389], // Approx. for Gangtok
+    },
   },
   {
     title: 'Banff Park Lodge',
@@ -464,6 +595,10 @@ const Data = [
     country: 'Canada',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-115.5708, 51.1784], // Approx. for Banff National Park
+    },
   },
   {
     title: '&Beyond Phinda Forest Lodge',
@@ -477,6 +612,10 @@ const Data = [
     country: 'South Africa',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [32.6854, -27.8517], // Approx. for Phinda Private Game Reserve
+    },
   },
   {
     title: 'Hotel SayaJi Indore',
@@ -490,6 +629,10 @@ const Data = [
     country: 'India',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [75.8964, 22.7533], // Approx. for Indore
+    },
   },
   {
     title: 'Black Sheep Inn in the Andes',
@@ -504,6 +647,10 @@ const Data = [
     country: 'Ecuador',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [-78.9167, -0.8], // Approx. for Chugchilan
+    },
   },
   {
     title: 'Hotel Jaisalmer',
@@ -518,6 +665,10 @@ const Data = [
     country: 'India',
     reviews: [],
     owner: '68555ad6c0854c05cd3b0692',
+    geometry: {
+      type: 'Point',
+      coordinates: [70.9083, 26.9157], // Approx. for Jaisalmer
+    },
   },
   {
     title: 'New Villa',
@@ -531,6 +682,10 @@ const Data = [
     country: 'India',
     reviews: [],
     owner: '6857f2e606079c0ab9714167',
+    geometry: {
+      type: 'Point',
+      coordinates: [78.9629, 20.5937], // Approx. for India (generic, as "Pah" is unclear)
+    },
   },
 ];
 

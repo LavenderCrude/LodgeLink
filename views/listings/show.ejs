@@ -33,6 +33,13 @@
     color: white !important;
   }
 </style>
+<script>
+  let mapToken = '<%= process.env.MAP_TOKEN %>';
+  let coordinates;
+  <% if (listing.geometry && listing.geometry.coordinates) { %>
+    coordinates = <%- JSON.stringify(listing.geometry.coordinates) %>;
+  <% } %>
+</script>
 
 <div class="container" style="max-width: 700px">
   <h3 class="mb-4 mt-3 fw-semibold"><%= listing.title %></h3>
@@ -205,6 +212,47 @@
         <% } %>
       </div>
       <% } %>
+      <hr />
+    </div>
+    <div class="mb-3 mt-3 pt-3 text-center">
+      <h3>Where you'll be</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="custom-map-container">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+      <div id="menu">
+        <input
+          id="outdoors-v12"
+          type="radio"
+          name="rtoggle"
+          value="outdoors"
+          checked
+        />
+        <label for="outdoors-v12">Outdoors</label>
+
+        <input
+          id="standard-satellite"
+          type="radio"
+          name="rtoggle"
+          value="satellite"
+        />
+        <label for="standard-satellite">Satellite</label>
+
+        <input id="light-v11" type="radio" name="rtoggle" value="light" />
+        <label for="light-v11">Light</label>
+
+        <input id="dark-v11" type="radio" name="rtoggle" value="dark" />
+        <label for="dark-v11">Dark</label>
+
+        <input id="standard" type="radio" name="rtoggle" value="streets" />
+        <label for="standard">Streets</label>
+      </div>
     </div>
   </div>
+  <script src="/js/map.js"></script>
 </div>
