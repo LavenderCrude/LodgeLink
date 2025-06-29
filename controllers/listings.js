@@ -6,10 +6,26 @@ import mbxGeocoding from '@mapbox/mapbox-sdk/services/geocoding.js';
 const mapToken = process.env.MAP_TOKEN;
 const geocodingClient = mbxGeocoding({ accessToken: mapToken });
 
-// Show all listings
 export const getAllListings = async (req, res) => {
-  const listings = await Listing.find();
-  res.render('listings/index.ejs', { listings });
+  const { category, q } = req.query;
+  let filter = {};
+
+  if (category) {
+    filter.category = category;
+  }
+
+  if (q) {
+    const regex = new RegExp(q, 'i'); // case-insensitive
+    filter.$or = [
+      { title: regex },
+      { location: regex },
+      { country: regex },
+      { price: isNaN(q) ? -1 : parseInt(q) }, // optional: search by price if number
+    ];
+  }
+
+  const listings = await Listing.find(filter);
+  res.render('listings/index.ejs', { listings, category, q });
 };
 
 // Render new listing form
@@ -33,7 +49,7 @@ export const createListing = async (req, res, next) => {
     return res.redirect('/listing/new');
   }
 
-  const { title, description, price, location, country } = req.body;
+  const { title, description, price, location, country, category } = req.body;
   const url = req.file.path;
   const filename = req.file.filename;
 
@@ -43,6 +59,7 @@ export const createListing = async (req, res, next) => {
     price,
     location,
     country,
+    category,
     image: { url, filename },
     owner: req.user._id,
     geometry,
@@ -69,7 +86,7 @@ export const renderEditForm = async (req, res) => {
 // Update listing
 export const updateListing = async (req, res) => {
   const { id } = req.params;
-  const { title, description, price, location, country } = req.body;
+  const { title, description, price, location, country, category } = req.body;
 
   const geoData = await geocodingClient
     .forwardGeocode({
@@ -93,6 +110,7 @@ export const updateListing = async (req, res) => {
       price,
       location,
       country,
+      category,
       geometry,
     },
     { new: true }

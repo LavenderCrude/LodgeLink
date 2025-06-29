@@ -1,5 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 import Review from './review.js';
+
 const listingSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -49,9 +50,24 @@ const listingSchema = new mongoose.Schema({
       required: true,
     },
   },
+  category: {
+    type: String,
+    enum: [
+      'trending',
+      'rooms',
+      'iconic',
+      'mountains',
+      'castles',
+      'pools',
+      'camping',
+      'farms',
+      'arctic',
+    ],
+    required: true,
+  },
 });
 
-//remove reviews when listing delete
+// Remove reviews when listing is deleted
 listingSchema.post('findOneAndDelete', async (listing) => {
   if (listing) {
     await Review.deleteMany({ _id: { $in: listing.reviews } });

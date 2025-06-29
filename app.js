@@ -70,7 +70,7 @@ app.use(methodOverride('_method'));
 // 7. ROUTES
 // Home
 app.get('/', (req, res) => {
-  res.send('Working Well');
+  res.redirect('/listing');
 });
 
 //Session Middleware

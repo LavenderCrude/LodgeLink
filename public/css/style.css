@@ -56,7 +56,14 @@ body {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(33, 37, 41, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: white !important;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
 /* Footer */
 footer {
   animation: fadeIn 1.2s ease-out;
@@ -163,4 +170,73 @@ footer a:hover {
 
 #menu label:hover {
   background-color: #e5e7eb;
+}
+
+/* filter catogery */
+.filters-scroll {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 15px 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  scrollbar-width: none; /* Firefox */
+}
+
+.filters-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.filter-option {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  min-width: 80px;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+}
+
+.filter-option i {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.filter-option.active {
+  color: #d90429;
+  text-decoration: none !important;
+}
+
+.filter-option.active i {
+  color: #d90429;
+}
+
+.filter-option:hover {
+  color: #d90429;
+  text-decoration: none;
+}
+
+.filter-option:hover i {
+  color: #d90429;
+}
+
+/* 🖥 Desktop: distribute evenly */
+@media (min-width: 768px) {
+  .filters-scroll {
+    justify-content: space-around;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+
+  .filter-option {
+    flex: 1 1 auto;
+    min-width: auto;
+    margin: 0 5px;
+  }
 }

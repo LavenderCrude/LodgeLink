@@ -1,8 +1,70 @@
 <% layout('/layouts/boilerplate.ejs') %>
 <body>
-  <h1 class="text-center my-4">Listing</h1>
-  <div class="row">
-    <% for (let listing of listings) { %>
+  <!-- Filter Bar -->
+  <div class="filters-scroll">
+    <a
+      href="/listing?category=trending"
+      class="filter-option <%= category === 'trending' ? 'active' : '' %>"
+    >
+      <i class="fa-solid fa-fire"></i> Trending
+    </a>
+    <a
+      href="/listing?category=rooms"
+      class="filter-option <%= category === 'rooms' ? 'active' : '' %>"
+    >
+      <i class="fa-solid fa-bed"></i> Rooms
+    </a>
+    <a
+      href="/listing?category=iconic"
+      class="filter-option <%= category === 'iconic' ? 'active' : '' %>"
+    >
+      <i class="fa-solid fa-city"></i> Iconic Cities
+    </a>
+    <a
+      href="/listing?category=mountains"
+      class="filter-option <%= category === 'mountains' ? 'active' : '' %>"
+    >
+      <i class="fa-solid fa-mountain"></i> Mountains
+    </a>
+    <a
+      href="/listing?category=castles"
+      class="filter-option <%= category === 'castles' ? 'active' : '' %>"
+    >
+      <i class="fa-solid fa-chess-rook"></i> Castles
+    </a>
+    <a
+      href="/listing?category=pools"
+      class="filter-option <%= category === 'pools' ? 'active' : '' %>"
+    >
+      <i class="fa-solid fa-water-ladder"></i> Amazing Pools
+    </a>
+    <a
+      href="/listing?category=camping"
+      class="filter-option <%= category === 'camping' ? 'active' : '' %>"
+    >
+      <i class="fa-solid fa-campground"></i> Camping
+    </a>
+    <a
+      href="/listing?category=farms"
+      class="filter-option <%= category === 'farms' ? 'active' : '' %>"
+    >
+      <i class="fa-solid fa-tractor"></i> Farms
+    </a>
+    <a
+      href="/listing?category=arctic"
+      class="filter-option <%= category === 'arctic' ? 'active' : '' %>"
+    >
+      <i class="fa-solid fa-snowflake"></i> Arctic
+    </a>
+  </div>
+
+  <!-- Listings -->
+  <div class="row mt-4">
+    <% if (listings.length === 0) { %>
+    <div class="col-12 text-center">
+      <h4>No listings found for "<%= category %>"</h4>
+    </div>
+    <% } %> <% for (let listing of listings) { %>
     <div class="col-md-4 mb-4 d-flex">
       <div class="card w-100 h-200 position-relative overflow-hidden">
         <div class="image-container position-relative">

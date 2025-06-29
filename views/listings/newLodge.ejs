@@ -1,6 +1,5 @@
 <% layout('/layouts/boilerplate.ejs') %>
 <style>
-  /* Your existing CSS */
   .form-container {
     max-width: 700px;
     margin: 0 auto;
@@ -24,7 +23,8 @@
 
   input[type='text'],
   input[type='number'],
-  textarea {
+  textarea,
+  select {
     width: 100%;
     padding: 10px 12px;
     border: 1px solid #ddd;
@@ -74,7 +74,7 @@
         type="text"
         name="title"
         id="title"
-        placeholder="enter title"
+        placeholder="Enter title"
         class="form-control"
         required
         minlength="5"
@@ -89,7 +89,7 @@
       <textarea
         name="description"
         id="description"
-        placeholder="enter description"
+        placeholder="Enter description"
         rows="3"
         class="form-control"
         required
@@ -109,7 +109,7 @@
         class="form-control"
         required
       />
-      <div class="invalid-feedback">Please enter a valid URL.</div>
+      <div class="invalid-feedback">Please upload a valid image.</div>
     </div>
 
     <div class="form-row d-flex mb-3">
@@ -119,7 +119,7 @@
           type="number"
           name="price"
           id="price"
-          placeholder="enter price"
+          placeholder="Enter price"
           class="form-control"
           min="0"
           step="0.01"
@@ -134,7 +134,7 @@
           type="text"
           name="country"
           id="country"
-          placeholder="enter country"
+          placeholder="Enter country"
           class="form-control"
           required
           minlength="3"
@@ -151,7 +151,7 @@
         type="text"
         name="location"
         id="location"
-        placeholder="enter location"
+        placeholder="Enter location"
         class="form-control"
         required
         minlength="3"
@@ -161,7 +161,25 @@
       </div>
     </div>
 
+    <div class="form-group mb-3">
+      <label for="category">Category</label>
+      <select name="category" id="category" class="form-control" required>
+        <option value="">-- Select Category --</option>
+        <option value="trending">Trending</option>
+        <option value="rooms">Rooms</option>
+        <option value="iconic">Iconic Cities</option>
+        <option value="mountains">Mountains</option>
+        <option value="castles">Castles</option>
+        <option value="pools">Amazing Pools</option>
+        <option value="camping">Camping</option>
+        <option value="farms">Farms</option>
+        <option value="arctic">Arctic</option>
+      </select>
+      <div class="invalid-feedback">Please select a valid category.</div>
+    </div>
+
     <button type="submit" class="add-button">Add</button>
   </form>
 </div>
+
 <script src="/js/newLodge.js"></script>

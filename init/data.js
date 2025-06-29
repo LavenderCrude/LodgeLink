@@ -18,14 +18,15 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-151.7395, -16.5004], // Approx. for Bora Bora
+      coordinates: [-151.7395, -16.5004],
     },
+    category: 'pools',
   },
   {
     title: 'Burj Al Arab Jumeirah',
     description: 'Ultra-luxurious hotel located in Burj Al Arab',
     image: {
-      url: 'https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg',
+      url: 'https://assets.kerzner.com/api/public/content/93f5737e2f3c481cb5f5a2419f061271?v=afe2b6a6',
       filename: 'burjalarab_jumeirah.jpg',
     },
     price: 120000,
@@ -35,14 +36,15 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [55.1853, 25.1412], // Approx. for Burj Al Arab, Dubai
+      coordinates: [55.1853, 25.1412],
     },
+    category: 'iconic',
   },
   {
     title: 'Taj Sea Palace',
     description: 'Romantic floating palace in the middle of Lake Pichola',
     image: {
-      url: 'https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2018/12/ATLANTIS-THE-PALM-DUBAI.jpg?ssl=1',
+      url: 'https://soulfultravelguy.com/uploads/blogpost/blogpost_image_1679267927.png',
       filename: 'tajseapalace.jpg',
     },
     price: 35000,
@@ -52,8 +54,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [73.6808, 24.5754], // Approx. for Udaipur
+      coordinates: [73.6808, 24.5754],
     },
+    category: 'iconic',
   },
   {
     title: 'The Leela Palace',
@@ -69,14 +72,15 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [77.2167, 28.6139], // Approx. for New Delhi
+      coordinates: [77.2167, 28.6139],
     },
+    category: 'iconic',
   },
   {
     title: 'Burj Al Arab',
     description: 'Iconic sail-shaped luxury hotel on an artificial island',
     image: {
-      url: 'https://www.reuters.com/resizer/v2/I6H7TBVZIZOEFPFRM523YVB44E.jpg?auth=96453708d93021cafbef1735322cf4ab0bc992f9d618fed12339856703bcd026&width=5094&quality=80',
+      url: 'https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/jumeirah-burj-al-arab/new-website-content/baa-hotel-home-page/hotel-hero/baa-drone-hero.jpg?h=823&w=1920&revision=9a966203-7040-4deb-99bd-34b8c9c06911',
       filename: 'burjalarab.jpg',
     },
     price: 85000,
@@ -86,8 +90,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [55.1853, 25.1412], // Approx. for Burj Al Arab, Dubai
+      coordinates: [55.1853, 25.1412],
     },
+    category: 'iconic',
   },
   {
     title: 'Marina Bay Sands',
@@ -103,8 +108,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [103.8607, 1.2834], // Approx. for Marina Bay Sands, Singapore
+      coordinates: [103.8607, 1.2834],
     },
+    category: 'pools',
   },
   {
     title: 'The Plaza',
@@ -120,12 +126,13 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-73.9747, 40.7648], // Approx. for The Plaza, New York
+      coordinates: [-73.9747, 40.7648],
     },
+    category: 'iconic',
   },
   {
     title: 'Hotel de Paris',
-    description: 'Belle Époque luxury with a 4-Michelin star restaurant',
+    description: ' Belle Époque luxury with a 4-Michelin star restaurant',
     image: {
       url: 'https://www.americanexpress.com/en-us/travel/discover/photos/224/56268/1200/CasinoSquare.jpg',
       filename: 'hoteldeparis.jpg',
@@ -137,14 +144,15 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [7.4275, 43.7384], // Approx. for Monte Carlo
+      coordinates: [7.4275, 43.7384],
     },
+    category: 'iconic',
   },
   {
     title: 'The Ritz London',
     description: 'Iconic British luxury with afternoon tea service',
     image: {
-      url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/f4/56/f1/aerial-view.jpg?w=1200&h=-1&s=1',
+      url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/fb/10/89/the-palm-court.jpg?w=900&h=500&s=1',
       filename: 'theritzlondon.jpg',
     },
     price: 38000,
@@ -154,14 +162,15 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-0.1416, 51.5074], // Approx. for The Ritz, London
+      coordinates: [-0.1416, 51.5074],
     },
+    category: 'iconic',
   },
   {
     title: 'Mandarin Oriental',
     description: 'Riverside luxury with Thai-inspired architecture',
     image: {
-      url: 'https://images.squarespace-cdn.com/content/v1/61f5948dda35940165c586b8/1683218730517-L1FSVHODHNU0ZDV49U7A/IMG_5800.jpeg',
+      url: 'https://images.squarespace-cdn.com/content/v1/61f5948dda35940165c586b8/1683218730517-L1FSVHODHNU0ZDV49U7A/IMGexploded_view=1',
       filename: 'mandarinoriental.jpg',
     },
     price: 28000,
@@ -171,8 +180,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [104.0668, 30.6586], // Approx. for Mandarin Oriental, Chengdu
+      coordinates: [104.0668, 30.6586],
     },
+    category: 'iconic',
   },
   {
     title: 'Four Seasons Bora Bora',
@@ -188,8 +198,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-151.7395, -16.5004], // Approx. for Bora Bora
+      coordinates: [-151.7395, -16.5004],
     },
+    category: 'pools',
   },
   {
     title: 'Amangiri',
@@ -205,8 +216,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-111.6004, 37.0232], // Approx. for Amangiri, Utah
+      coordinates: [-111.6004, 37.0232],
     },
+    category: 'mountains',
   },
   {
     title: 'Belmond Hotel Caruso',
@@ -223,15 +235,16 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [14.6128, 40.6503], // Approx. for Ravello
+      coordinates: [14.6128, 40.6503],
     },
+    category: 'pools',
   },
   {
     title: 'The Peninsula',
     description:
       'Colonial-style luxury with harbor views and Rolls Royce fleet',
     image: {
-      url: 'https://hongkonglei.com/wp-content/2024/02/8336ada5-6525-44ed-952b-e901064485c6.jpg',
+      url: 'https://assets.architecturaldigest.in/photos/6818fb700f1c8c2f59ab1356/16:9/w_2560%2Cc_limit/Untitled%2520design%2520(69).png',
       filename: 'thepeninsula.jpg',
     },
     price: 48000,
@@ -241,8 +254,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [114.1717, 22.295], // Approx. for The Peninsula, Hong Kong
+      coordinates: [114.1717, 22.295],
     },
+    category: 'iconic',
   },
   {
     title: 'Emirates Palace',
@@ -258,8 +272,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [54.3179, 24.4618], // Approx. for Emirates Palace, Abu Dhabi
+      coordinates: [54.3179, 24.4618],
     },
+    category: 'iconic',
   },
   {
     title: 'Hotel President Wilson',
@@ -275,8 +290,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [6.1507, 46.2135], // Approx. for Hotel President Wilson, Geneva
+      coordinates: [6.1507, 46.2135],
     },
+    category: 'iconic',
   },
   {
     title: 'The Savoy',
@@ -292,8 +308,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-0.1201, 51.5104], // Approx. for The Savoy, London
+      coordinates: [-0.1201, 51.5104],
     },
+    category: 'iconic',
   },
   {
     title: 'Rosewood Mayakoba',
@@ -309,8 +326,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-87.0285, 20.6767], // Approx. for Rosewood Mayakoba
+      coordinates: [-87.0285, 20.6767],
     },
+    category: 'pools',
   },
   {
     title: 'Aman Tokyo',
@@ -326,14 +344,15 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [139.7635, 35.6828], // Approx. for Aman Tokyo
+      coordinates: [139.7635, 35.6828],
     },
+    category: 'iconic',
   },
   {
     title: 'Hotel du Cap-Eden-Roc',
     description: 'Riviera glamour with famous seawater pool carved from rocks',
     image: {
-      url: 'https://images.unsplash.com/photo-1518684079-3c830d',
+      url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/32/cf/28/hotel-du-cap-eden-roc.jpg?w=900&h=-1&s=1',
       filename: 'hotelducapedenroc.jpg',
     },
     price: 88000,
@@ -343,8 +362,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [7.1204, 43.5506], // Approx. for Hotel du Cap-Eden-Roc
+      coordinates: [7.1204, 43.5506],
     },
+    category: 'pools',
   },
   {
     title: 'Ashford Castle',
@@ -360,8 +380,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-9.2846, 53.5344], // Approx. for Ashford Castle
+      coordinates: [-9.2846, 53.5344],
     },
+    category: 'castles',
   },
   {
     title: 'The Connaught',
@@ -377,8 +398,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-0.1497, 51.5101], // Approx. for The Connaught, London
+      coordinates: [-0.1497, 51.5101],
     },
+    category: 'iconic',
   },
   {
     title: 'The Brando',
@@ -394,8 +416,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-149.5583, -17.0083], // Approx. for Tetiaroa
+      coordinates: [-149.5583, -17.0083],
     },
+    category: 'pools',
   },
   {
     title: 'Amankora',
@@ -411,8 +434,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [89.4133, 27.4307], // Approx. for Paro, Bhutan
+      coordinates: [89.4133, 27.4307],
     },
+    category: 'mountains',
   },
   {
     title: 'Singita Boulders Lodge',
@@ -428,8 +452,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [31.414, -24.7697], // Approx. for Sabi Sand
+      coordinates: [31.414, -24.7697],
     },
+    category: 'farms',
   },
   {
     title: 'New PantHouse',
@@ -446,8 +471,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-73.9797, 40.7678], // Approx. for Central Park, New York
+      coordinates: [-73.9797, 40.7678],
     },
+    category: 'trending',
   },
   {
     title: 'Manhattan CityBride',
@@ -468,8 +494,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-73.9903, 40.7041], // Approx. for Manhattan Bridge area
+      coordinates: [-73.9903, 40.7041],
     },
+    category: 'trending',
   },
   {
     title: 'Peace Cabin',
@@ -490,8 +517,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-116.5, 51.45], // Approx. for Yoho National Park
+      coordinates: [-116.5, 51.45],
     },
+    category: 'camping',
   },
   {
     title: 'New Joshimat Lodge',
@@ -512,8 +540,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [79.5593, 30.5549], // Approx. for Joshimat
+      coordinates: [79.5593, 30.5549],
     },
+    category: 'mountains',
   },
   {
     title: 'Fairmont Luxuryia',
@@ -529,8 +558,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [115.1889, -8.6705], // Approx. for Bali
+      coordinates: [115.1889, -8.6705],
     },
+    category: 'pools',
   },
   {
     title: 'Al Nassir Hotel',
@@ -546,8 +576,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [46.7132, 24.6572], // Approx. for Al Nassir, Riyadh
+      coordinates: [46.7132, 24.6572],
     },
+    category: 'rooms',
   },
   {
     title: "L'Mario Mysore",
@@ -563,8 +594,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [76.6394, 12.2958], // Approx. for Mysore
+      coordinates: [76.6394, 12.2958],
     },
+    category: 'rooms',
   },
   {
     title: 'Sikkim Junction',
@@ -580,8 +612,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [88.6065, 27.3389], // Approx. for Gangtok
+      coordinates: [88.6065, 27.3389],
     },
+    category: 'mountains',
   },
   {
     title: 'Banff Park Lodge',
@@ -597,8 +630,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-115.5708, 51.1784], // Approx. for Banff National Park
+      coordinates: [-115.5708, 51.1784],
     },
+    category: 'mountains',
   },
   {
     title: '&Beyond Phinda Forest Lodge',
@@ -614,8 +648,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [32.6854, -27.8517], // Approx. for Phinda Private Game Reserve
+      coordinates: [32.6854, -27.8517],
     },
+    category: 'farms',
   },
   {
     title: 'Hotel SayaJi Indore',
@@ -631,8 +666,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [75.8964, 22.7533], // Approx. for Indore
+      coordinates: [75.8964, 22.7533],
     },
+    category: 'rooms',
   },
   {
     title: 'Black Sheep Inn in the Andes',
@@ -649,8 +685,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [-78.9167, -0.8], // Approx. for Chugchilan
+      coordinates: [-78.9167, -0.8],
     },
+    category: 'camping',
   },
   {
     title: 'Hotel Jaisalmer',
@@ -667,25 +704,9 @@ const Data = [
     owner: '68555ad6c0854c05cd3b0692',
     geometry: {
       type: 'Point',
-      coordinates: [70.9083, 26.9157], // Approx. for Jaisalmer
+      coordinates: [70.9083, 26.9157],
     },
-  },
-  {
-    title: 'New Villa',
-    description: 'Newly built villa with modern amenities',
-    image: {
-      url: 'https://res.cloudinary.com/dali1bmhm/image/upload/v1750779954/LodgeLink_DEV/zec7kzklfaod4owm24fg.jpg',
-      filename: 'LodgeLink_DEV/zec7kzklfaod4owm24fg',
-    },
-    price: 3344,
-    location: 'Pah',
-    country: 'India',
-    reviews: [],
-    owner: '6857f2e606079c0ab9714167',
-    geometry: {
-      type: 'Point',
-      coordinates: [78.9629, 20.5937], // Approx. for India (generic, as "Pah" is unclear)
-    },
+    category: 'iconic',
   },
 ];
 
