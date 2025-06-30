@@ -43,14 +43,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const mongoStore = MongoStore.create({
   mongoUrl: DB_URL,
   crypto: {
-    secret: 'secretCode',
+    secret: process.env.SECRET,
   },
   touchAfter: 24 * 3600,
 });
 
 const sessionOptions = {
   store: mongoStore,
-  secret: 'secretCode',
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true,
   cookie: {
