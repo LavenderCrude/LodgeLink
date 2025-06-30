@@ -2,20 +2,16 @@ const Data = [
   {
     title: 'Four Seasons Resort Bora Bora',
     description:
-      'Overwater bungalows with glass floors showcasing the vibrant marine life below',
+      'Overwater bungalows with glass floor panels showcasing the vibrant marine life below',
     image: {
-      url: 'https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201508201905273799-f833b688-2125-40f0-8999-8f9db152dd96.jpg',
+      url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/2e/8d/de/overwater-bungalows.jpg?w=900&h=500&s=1',
       filename: 'fourseasons_borabora.jpg',
     },
-    price: 85000,
+    price: 120000,
     location: 'Bora Bora',
     country: 'French Polynesia',
-    reviews: [
-      '68565330dfd0ae11112a518b',
-      '6857ebdf1734408b36a2baa5',
-      '6858171a30d6206d5a3f390b',
-    ],
-    owner: '68555ad6c0854c05cd3b0692',
+    reviews: [],
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-151.7395, -16.5004],
@@ -32,8 +28,8 @@ const Data = [
     price: 120000,
     location: 'Dubai',
     country: 'United Arab Emirates',
-    reviews: ['6853a32bc58de347998dba07'],
-    owner: '68555ad6c0854c05cd3b0692',
+    reviews: [],
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [55.1853, 25.1412],
@@ -51,7 +47,7 @@ const Data = [
     location: 'Udaipur',
     country: 'India',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [73.6808, 24.5754],
@@ -69,7 +65,7 @@ const Data = [
     location: 'New Delhi',
     country: 'India',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [77.2167, 28.6139],
@@ -85,9 +81,9 @@ const Data = [
     },
     price: 85000,
     location: 'Dubai',
-    country: 'UAE',
+    country: 'United Arab Emirates',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [55.1853, 25.1412],
@@ -105,7 +101,7 @@ const Data = [
     location: 'Singapore',
     country: 'Singapore',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [103.8607, 1.2834],
@@ -123,7 +119,7 @@ const Data = [
     location: 'New York',
     country: 'USA',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-73.9747, 40.7648],
@@ -141,7 +137,7 @@ const Data = [
     location: 'Monte Carlo',
     country: 'Monaco',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [7.4275, 43.7384],
@@ -159,7 +155,7 @@ const Data = [
     location: 'London',
     country: 'UK',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-0.1416, 51.5074],
@@ -177,30 +173,12 @@ const Data = [
     location: 'Chengdu',
     country: 'China',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [104.0668, 30.6586],
     },
     category: 'iconic',
-  },
-  {
-    title: 'Four Seasons Bora Bora',
-    description: 'Overwater bungalows with glass floor panels',
-    image: {
-      url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/2e/8d/de/overwater-bungalows.jpg?w=900&h=500&s=1',
-      filename: 'fourseasons_borabora2.jpg',
-    },
-    price: 120000,
-    location: 'Bora Bora',
-    country: 'French Polynesia',
-    reviews: ['68559451c0854c05cd3b0808'],
-    owner: '68555ad6c0854c05cd3b0692',
-    geometry: {
-      type: 'Point',
-      coordinates: [-151.7395, -16.5004],
-    },
-    category: 'pools',
   },
   {
     title: 'Amangiri',
@@ -213,7 +191,7 @@ const Data = [
     location: 'Utah',
     country: 'USA',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-111.6004, 37.0232],
@@ -232,7 +210,7 @@ const Data = [
     location: 'Ravello',
     country: 'Italy',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [14.6128, 40.6503],
@@ -251,7 +229,7 @@ const Data = [
     location: 'Hong Kong',
     country: 'China',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [114.1717, 22.295],
@@ -267,9 +245,9 @@ const Data = [
     },
     price: 55000,
     location: 'Abu Dhabi',
-    country: 'UAE',
+    country: 'United Arab Emirates',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [54.3179, 24.4618],
@@ -287,7 +265,7 @@ const Data = [
     location: 'Geneva',
     country: 'Switzerland',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [6.1507, 46.2135],
@@ -305,7 +283,7 @@ const Data = [
     location: 'London',
     country: 'UK',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-0.1201, 51.5104],
@@ -323,7 +301,7 @@ const Data = [
     location: 'Playa del Carmen',
     country: 'Mexico',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-87.0285, 20.6767],
@@ -341,7 +319,7 @@ const Data = [
     location: 'Tokyo',
     country: 'Japan',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [139.7635, 35.6828],
@@ -359,7 +337,7 @@ const Data = [
     location: 'Antibes',
     country: 'France',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [7.1204, 43.5506],
@@ -377,7 +355,7 @@ const Data = [
     location: 'Mayo',
     country: 'Ireland',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-9.2846, 53.5344],
@@ -395,7 +373,7 @@ const Data = [
     location: 'London',
     country: 'UK',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-0.1497, 51.5101],
@@ -413,7 +391,7 @@ const Data = [
     location: 'Tetiaroa',
     country: 'French Polynesia',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-149.5583, -17.0083],
@@ -431,7 +409,7 @@ const Data = [
     location: 'Paro',
     country: 'Bhutan',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [89.4133, 27.4307],
@@ -448,8 +426,8 @@ const Data = [
     price: 125000,
     location: 'Sabi Sand',
     country: 'South Africa',
-    reviews: ['683344c8cf9c3865441ff6dc', '68334515cf9c3865441ff6e3'],
-    owner: '68555ad6c0854c05cd3b0692',
+    reviews: [],
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [31.414, -24.7697],
@@ -468,7 +446,7 @@ const Data = [
     location: 'New York',
     country: 'USA',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-73.9797, 40.7678],
@@ -485,13 +463,8 @@ const Data = [
     price: 777777,
     location: 'New York',
     country: 'USA',
-    reviews: [
-      '68330c2ea115782f325ebb99',
-      '68330f0ec3a6ddf94289f18d',
-      '68331b8433510cc161310fca',
-      '68332321373997f96c19f024',
-    ],
-    owner: '68555ad6c0854c05cd3b0692',
+    reviews: [],
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-73.9903, 40.7041],
@@ -508,13 +481,8 @@ const Data = [
     price: 88000,
     location: 'Yoho National Park, British Columbia',
     country: 'Canada',
-    reviews: [
-      '68336c513ae32b7b824f9f9c',
-      '68336c603ae32b7b824f9fa3',
-      '68336c7c3ae32b7b824f9faf',
-      '68336c903ae32b7b824f9fb5',
-    ],
-    owner: '68555ad6c0854c05cd3b0692',
+    reviews: [],
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-116.5, 51.45],
@@ -532,12 +500,8 @@ const Data = [
     price: 500,
     location: 'Joshimat, Uttarakhand',
     country: 'India',
-    reviews: [
-      '6833f18cca047b2db2c2fe59',
-      '6833f1adca047b2db2c2fe60',
-      '6833f7572ebbe6646d64c2bf',
-    ],
-    owner: '68555ad6c0854c05cd3b0692',
+    reviews: [],
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [79.5593, 30.5549],
@@ -555,7 +519,7 @@ const Data = [
     location: 'Bali',
     country: 'Indonesia',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [115.1889, -8.6705],
@@ -572,8 +536,8 @@ const Data = [
     price: 55000,
     location: 'Al Nassir',
     country: 'Saudi Arabia',
-    reviews: ['6836ba7d3fffb26dd73ef336'],
-    owner: '68555ad6c0854c05cd3b0692',
+    reviews: [],
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [46.7132, 24.6572],
@@ -591,7 +555,7 @@ const Data = [
     location: 'Mysore',
     country: 'India',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [76.6394, 12.2958],
@@ -609,7 +573,7 @@ const Data = [
     location: 'Gangtok, Sikkim',
     country: 'India',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [88.6065, 27.3389],
@@ -627,7 +591,7 @@ const Data = [
     location: 'Banff National Park',
     country: 'Canada',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-115.5708, 51.1784],
@@ -645,7 +609,7 @@ const Data = [
     location: 'Phinda Private Game Reserve in northern KwaZulu-Natal',
     country: 'South Africa',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [32.6854, -27.8517],
@@ -663,7 +627,7 @@ const Data = [
     location: 'SayaJi Square, Vijay Nagar, Indore',
     country: 'India',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [75.8964, 22.7533],
@@ -682,7 +646,7 @@ const Data = [
     location: 'Chugchilan-Sigchos Road Sigchos County, Chugchilan-501240',
     country: 'Ecuador',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [-78.9167, -0.8],
@@ -701,7 +665,7 @@ const Data = [
     location: 'Jaisalmer',
     country: 'India',
     reviews: [],
-    owner: '68555ad6c0854c05cd3b0692',
+    owner: '68620875b78a181a24b2722b',
     geometry: {
       type: 'Point',
       coordinates: [70.9083, 26.9157],

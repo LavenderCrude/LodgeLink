@@ -52,7 +52,11 @@
       onerror="this.src='https://via.placeholder.com/700x300?text=No+Image'"
     />
     <div class="card-body px-0">
-      <p class="mb-3 text-muted">Owned by: <%= listing.owner.username %></p>
+      <p class="mb-3 text-muted">
+        Owned by: <%= listing.owner ? listing.owner.username : "Unknown Owner"
+        %>
+      </p>
+
       <p class="mb-3 text-muted"><%= listing.description %></p>
 
       <div class="mb-2">₹<%= listing.price.toLocaleString('en-IN') %></div>

@@ -20,7 +20,7 @@ export const getAllListings = async (req, res) => {
       { title: regex },
       { location: regex },
       { country: regex },
-      { price: isNaN(q) ? -1 : parseInt(q) }, // optional: search by price if number
+      { price: isNaN(q) ? -1 : parseInt(q) },
     ];
   }
 

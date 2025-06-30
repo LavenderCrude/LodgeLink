@@ -14,16 +14,17 @@ import listingRouter from './routes/listing.js';
 import reviewRouter from './routes/review.js';
 import userRouter from './routes/user.js';
 import session from 'express-session';
+import MongoStore from 'connect-mongo';
 import flash from 'connect-flash';
 import passport from 'passport';
 import LocalStrategy from 'passport-local';
 import User from './models/user.js';
 
 // 2. DATABASE CONNECTION
-const MONGO_URL = 'mongodb://127.0.0.1:27017/LodgeLink';
+const DB_URL = process.env.ATLASDB_URL;
 
 async function main() {
-  await mongoose.connect(MONGO_URL);
+  await mongoose.connect(DB_URL);
 }
 
 main()
@@ -39,7 +40,16 @@ const app = express();
 const port = 3000;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+const mongoStore = MongoStore.create({
+  mongoUrl: DB_URL,
+  crypto: {
+    secret: 'secretCode',
+  },
+  touchAfter: 24 * 3600,
+});
+
 const sessionOptions = {
+  store: mongoStore,
   secret: 'secretCode',
   resave: false,
   saveUninitialized: true,

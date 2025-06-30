@@ -1,48 +1,23 @@
 import mongoose from 'mongoose';
 import Listing from '../models/listing.js';
 import Data from './data.js';
+import dotenv from 'dotenv';
+dotenv.config({ path: '../.env' }); // Adjust path if .env is one level up
 
-const MONGO_URL = 'mongodb://127.0.0.1:27017/LodgeLink';
+const DB_URL = process.env.ATLASDB_URL;
+console.log('DB_URL from .env:', DB_URL);
 main()
   .then(() => {
-    console.log('✅ Connection Successfull');
+    console.log('✅ Connection Successful');
+    return Listing.insertMany(Data);
+  })
+  .then(() => {
+    console.log('📦 Sample data inserted');
   })
   .catch((err) => {
-    console.log('❌ Connection Not Successfull', err);
+    console.log('❌ Error:', err);
   });
 
 async function main() {
-  await mongoose.connect(MONGO_URL);
+  await mongoose.connect(DB_URL);
 }
-
-Listing.insertMany(Data);
-
-// import mongoose from 'mongoose';
-// import User from '../models/user.js';
-// import Review from '../models/review.js';
-
-// const MONGO_URL = 'mongodb://127.0.0.1:27017/LodgeLink';
-
-// async function main() {
-//   await mongoose.connect(MONGO_URL);
-//   console.log('✅ Connected to DB');
-
-//   const user = await User.findOne({ username: 'random1' });
-//   if (!user) {
-//     console.log('❌ No user found to assign as author.');
-//     return;
-//   }
-
-//   const result = await Review.updateMany(
-//     {}, // 🔄 No condition => all reviews
-//     { $set: { author: user._id } }
-//   );
-
-//   console.log(
-//     `✅ Updated ${result.modifiedCount} reviews with author: ${user._id}`
-//   );
-
-//   await mongoose.disconnect();
-// }
-
-// main().catch((err) => console.error('❌ Error:', err));
